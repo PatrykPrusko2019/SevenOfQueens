@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="703a4f58-c4e7-4670-8b1c-3af8313997f7" name="Default Changelist" comment="" />
+    <list default="true" id="703a4f58-c4e7-4670-8b1c-3af8313997f7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Help.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Help.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SevenOfQueens.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SevenOfQueens.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,11 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Help.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
-              <caret line="28" column="16" lean-forward="true" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+            <state relative-caret-position="720">
+              <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
               <folding>
                 <element signature="e#133#134#0" expanded="true" />
                 <element signature="e#184#185#0" expanded="true" />
@@ -36,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SevenOfQueens.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="290" column="6" lean-forward="true" selection-start-line="290" selection-start-column="6" selection-end-line="290" selection-end-column="28" />
+            <state relative-caret-position="302">
+              <caret line="299" column="4" selection-start-line="299" selection-start-column="4" selection-end-line="299" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -54,14 +58,17 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Exercise_7_24.java" />
         <option value="$PROJECT_DIR$/src/Queen.java" />
         <option value="$PROJECT_DIR$/src/EightOfQueens.java" />
-        <option value="$PROJECT_DIR$/src/SevenOfQueens.java" />
         <option value="$PROJECT_DIR$/src/Help.java" />
+        <option value="$PROJECT_DIR$/src/SevenOfQueens.java" />
       </list>
     </option>
   </component>
@@ -71,34 +78,16 @@
     <option name="width" value="1920" />
     <option name="height" value="540" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="SevenQueensOnTheBoard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SevenQueensOnTheBoard" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SevenQueensOnTheBoard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SevenQueensOnTheBoard" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$PROJECT_DIR$/../../../srodowisko_programistyczne/android_sdk" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576104827756" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576105452067" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
@@ -168,13 +157,13 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3291536" />
-      <window_info active="true" anchor="bottom" x="2" y="40" width="1364" height="733" id="Run" order="2" type="FLOATING" visible="true" weight="0.8557994" />
+      <window_info anchor="bottom" x="2" y="40" width="1364" height="733" id="Run" order="2" type="FLOATING" weight="0.8557994" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.26018807" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3291536" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3291536" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -328,7 +317,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/Help.java</url>
-          <line>29</line>
+          <line>30</line>
           <properties class="Help" method="fillTheBusyFieldsInArray">
             <option name="EMULATED" value="true" />
           </properties>
@@ -336,7 +325,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/Help.java</url>
-          <line>50</line>
+          <line>51</line>
           <properties class="Help" method="diagonal">
             <option name="EMULATED" value="true" />
           </properties>
@@ -344,7 +333,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/Help.java</url>
-          <line>61</line>
+          <line>62</line>
           <properties class="Help" method="fillPositiveRows">
             <option name="EMULATED" value="true" />
           </properties>
@@ -352,7 +341,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/Help.java</url>
-          <line>75</line>
+          <line>76</line>
           <properties class="Help" method="fillNegativeRows">
             <option name="EMULATED" value="true" />
           </properties>
@@ -360,7 +349,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/Help.java</url>
-          <line>91</line>
+          <line>92</line>
           <properties class="Help" method="vertical">
             <option name="EMULATED" value="true" />
           </properties>
@@ -368,7 +357,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/Help.java</url>
-          <line>103</line>
+          <line>104</line>
           <properties class="Help" method="horizontally">
             <option name="EMULATED" value="true" />
           </properties>
@@ -376,7 +365,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/Help.java</url>
-          <line>115</line>
+          <line>116</line>
           <properties class="Help" method="checkTheValueIsEmpty">
             <option name="EMULATED" value="true" />
           </properties>
@@ -388,17 +377,10 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Queen.java" />
     <entry file="file://$PROJECT_DIR$/src/EightOfQueens.java" />
-    <entry file="file://$PROJECT_DIR$/src/SevenOfQueens.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="290" column="6" lean-forward="true" selection-start-line="290" selection-start-column="6" selection-end-line="290" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Help.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="28" column="16" lean-forward="true" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+        <state relative-caret-position="720">
+          <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
           <folding>
             <element signature="e#133#134#0" expanded="true" />
             <element signature="e#184#185#0" expanded="true" />
@@ -415,6 +397,13 @@
             <element signature="e#589#590#0" expanded="true" />
             <element signature="e#625#626#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SevenOfQueens.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="299" column="4" selection-start-line="299" selection-start-column="4" selection-end-line="299" selection-end-column="4" />
         </state>
       </provider>
     </entry>

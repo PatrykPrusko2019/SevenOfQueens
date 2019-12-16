@@ -1,53 +1,53 @@
 import java.util.Random;
 /**
- The program shows in 63 attempts how many times the Queen's figure can appear on the chessboard,
- so that none can capture another Queen's figure.
-
- Queen figure -> 8
- the area the queen can move in -> 1
- free fields -> 0
-
- Example of two pieces on a chessboard:
-
- 8 1 1 1 1 1 1 1
- 1 1 0 0 0 0 0 0
- 1 0 1 0 0 0 0 0
- 1 0 0 1 0 0 0 0
- 1 0 0 0 1 0 0 0
- 1 0 0 0 0 1 0 0
- 1 0 0 0 0 0 1 0
- 1 0 0 0 0 0 0 1
-
- The queen's field on the board is [0] [0] = 8.
- Number of fields the queen can move on -> 22
-
- next queen on the chessboard:
-
- 8 1 1 1 1 1 1 1
- 1 1 1 1 1 1 8 1
- 1 0 1 0 0 1 1 1
- 1 0 0 1 1 0 1 0
- 1 0 0 1 1 0 1 0
- 1 0 1 0 0 1 1 0
- 1 1 0 0 0 0 1 0
- 1 0 0 0 0 0 1 1
-
-
- The queen's field on the board is [1] [6] = 8.
- Number of fields the queen can move on -> 24
-
- It starts with a random field, and then searches according to the algorithm for
- the field that has the lowest number of moves for a given queen, e.g. 22 number.
- Then, every attempt attempts to select all boxes 1 or 8. e.g .:
-
- 8 1 1 1 1 1 1 1
- 1 1 1 1 8 1 1 1
- 1 1 1 1 1 1 1 8
- 1 1 1 1 1 1 1 1
- 1 1 1 1 1 1 8 1
- 1 1 8 1 1 1 1 1
- 1 1 1 1 1 8 1 1
- 1 8 1 1 1 1 1 1
+ *The program shows in 63 attempts how many times the Queen's figure can appear on the chessboard,
+ *  so that none can capture another Queen's figure.
+ *
+ *  Queen figure -> 8
+ *  the area the queen can move in -> 1
+ *  free fields -> 0
+ *
+ *  Example of two pieces on a chessboard:
+ *
+ *  8 1 1 1 1 1 1 1
+ *  1 1 0 0 0 0 0 0
+ *  1 0 1 0 0 0 0 0
+ *  1 0 0 1 0 0 0 0
+ *  1 0 0 0 1 0 0 0
+ *  1 0 0 0 0 1 0 0
+ *  1 0 0 0 0 0 1 0
+ *  1 0 0 0 0 0 0 1
+ *
+ *  The queen's field on the board is [0] [0] = 8.
+ *  Number of fields the queen can move on -> 22
+ *
+ *  next queen on the chessboard:
+ *
+ *  8 1 1 1 1 1 1 1
+ *  1 1 1 1 1 1 8 1
+ *  1 0 1 0 0 1 1 1
+ *  1 0 0 1 1 0 1 0
+ *  1 0 0 1 1 0 1 0
+ *  1 0 1 0 0 1 1 0
+ *  1 1 0 0 0 0 1 0
+ *  1 0 0 0 0 0 1 1
+ *
+ *
+ *  The queen's field on the board is [1] [6] = 8.
+ *  Number of fields the queen can move on -> 24
+ *
+ *  It starts with a random field, and then searches according to the algorithm for
+ *  the field that has the lowest number of moves for a given queen, e.g. 22 number.
+ *  Then, every attempt attempts to select all boxes 1 or 8. e.g .:
+ *
+ *  8 1 1 1 1 1 1 1
+ *  1 1 1 1 8 1 1 1
+ *  1 1 1 1 1 1 1 8
+ *  1 1 1 1 1 1 1 1
+ *  1 1 1 1 1 1 8 1
+ *  1 1 8 1 1 1 1 1
+ *  1 1 1 1 1 8 1 1
+ *  1 8 1 1 1 1 1 1
  */
 public class SevenOfQueens {
 
@@ -131,12 +131,12 @@ public class SevenOfQueens {
     private void randomNumber() {
         int firstJumpOfTheQueen = rand.nextInt(64) + 1; //1-64 items on the board
         int counter = 1;
-        for(int i = 0; i < getChessBoard().length; i++) {
-            for(int j = 0; j < getChessBoard()[i].length; j++) {
+        for(int i = 0; i < chessBoard.length; i++) {
+            for(int j = 0; j < chessBoard[i].length; j++) {
                 if(firstJumpOfTheQueen == counter) {
                     setRow(i);
                     setColumn(j);
-                    getChessBoard()[i][j] = 8;
+                    chessBoard[i][j] = 8;
                 }
                 counter++;
             }
@@ -146,12 +146,12 @@ public class SevenOfQueens {
     //in sequence
     private int jumpFirst(int counterStartJump) {
         int count = 0;
-        for(int i = 0; i < getChessBoard().length; i++) {
-            for(int j = 0; j < getChessBoard().length; j++) {
+        for(int i = 0; i < chessBoard.length; i++) {
+            for(int j = 0; j < chessBoard.length; j++) {
                 if(counterStartJump == count) {
                     setRow(i);
                     setColumn(j);
-                    getChessBoard()[i][j] = 8;
+                    chessBoard[i][j] = 8;
                     return 0;
                 }
                 count++;
@@ -193,11 +193,11 @@ public class SevenOfQueens {
     //removes values ​​from the arrayOfBusyFields array where the field in the chessBoard is already occupied
      public void fillTheZerosInArray() {
 
-        for(int i = 0; i < getChessBoard().length; i++){
-            for(int j = 0; j < getChessBoard()[i].length; j++) {
+        for(int i = 0; i < chessBoard.length; i++){
+            for(int j = 0; j < chessBoard[i].length; j++) {
 
-                if(getChessBoard()[i][j] != 0) {
-                    getArrayOfBusyFields()[i][j] = 0;
+                if(chessBoard[i][j] != 0) {
+                    arrayOfBusyFields[i][j] = 0;
                 }
             }
         }
@@ -208,30 +208,30 @@ public class SevenOfQueens {
     //looking for the least busy queen on the given board / table
     private boolean foundMinValueForQueenByJump() {
         int minValue = 0;
-        for(int i = 0; i < getArrayOfBusyFields().length; i++) {
-            for(int j = 0; j < getArrayOfBusyFields()[i].length; j++) {
+        for(int i = 0; i < arrayOfBusyFields.length; i++) {
+            for(int j = 0; j < arrayOfBusyFields[i].length; j++) {
 
-                switch ( getArrayOfBusyFields()[i][j] ) {
+                switch ( arrayOfBusyFields[i][j] ) {
                     case 22: {
-                        minValue = getArrayOfBusyFields()[i][j];
+                        minValue = arrayOfBusyFields[i][j];
                         break;
                     }
                     case 24: {
-                        minValue = getArrayOfBusyFields()[i][j];
+                        minValue = arrayOfBusyFields[i][j];
                         if(! checkMinValue(minValue) ) {
                             minValue = 0;
                         }
                         break;
                     }
                     case 26: {
-                        minValue = getArrayOfBusyFields()[i][j];
+                        minValue = arrayOfBusyFields[i][j];
                         if(! checkMinValue(minValue) ) {
                             minValue = 0;
                         }
                         break;
                     }
                     case 28: {
-                        minValue = getArrayOfBusyFields()[i][j];
+                        minValue = arrayOfBusyFields[i][j];
                         if(! checkMinValue(minValue) ) {
                             minValue = 0;
                         }
@@ -242,7 +242,7 @@ public class SevenOfQueens {
                     if(checkIfYouCanSetTheQueenOnArray(i, j) ) {//first checks to see if it collides with another queen on the boardy
                         setRow(i); //next Queen field
                         setColumn(j);
-                        getChessBoard()[i][j] = 8;
+                        chessBoard[i][j] = 8;
                         return true;
                     }
                 }
@@ -256,10 +256,10 @@ public class SevenOfQueens {
 
     //checks to see if it's the queen's least occupation
     private boolean checkMinValue(int minValue) {
-        for(int i = 0; i < getArrayOfBusyFields().length; i++) {
-            for(int j = 0; j < getArrayOfBusyFields()[i].length; j++) {
+        for(int i = 0; i < arrayOfBusyFields.length; i++) {
+            for(int j = 0; j < arrayOfBusyFields[i].length; j++) {
 
-                if( (minValue > getArrayOfBusyFields()[i][j]) && (getArrayOfBusyFields()[i][j] != 0) ) { //example: 24 > 22 && 22 != 0 -> true
+                if( (minValue > arrayOfBusyFields[i][j]) && (arrayOfBusyFields[i][j] != 0) ) { //example: 24 > 22 && 22 != 0 -> true
                     return false; //there is even less value
                 }
             }
@@ -269,7 +269,7 @@ public class SevenOfQueens {
 
     private boolean checkIfYouCanSetTheQueenOnArray(int row, int column) {
         completingArrayWithZeros( getQueenJumpTest() );
-        getQueenJumpTest()[row][column] = 8; //assign a test to the next queen field
+        queenJumpTest[row][column] = 8; //assign a test to the next queen field
         queenJumpTest = getHelp().fillTheBusyFieldsInArray(row, column, getQueenJumpTest()); //completes occupied fields with a given Queen's test positionn
 
         if( checkTheArrayToJump(row, column) ) {
@@ -313,22 +313,22 @@ public class SevenOfQueens {
     //specified how many possible fields a given queen has to use from a given field on the board
     private void completeTheArrayOfBusyFields() {
 
-        for(int i = 0; i < getArrayOfBusyFields().length; i++) {
+        for(int i = 0; i < arrayOfBusyFields.length; i++) {
             switch (i) {
                 case 0: case 7: {
-                    getArrayOfBusyFields()[i] = new int[] {22, 22, 22, 22, 22, 22, 22, 22};
+                    arrayOfBusyFields[i] = new int[] {22, 22, 22, 22, 22, 22, 22, 22};
                     break;
                 }
                 case 1: case 6: {
-                    getArrayOfBusyFields()[i] = new int[] {22, 24, 24, 24, 24, 24, 24, 22};
+                    arrayOfBusyFields[i] = new int[] {22, 24, 24, 24, 24, 24, 24, 22};
                     break;
                 }
                 case 2: case 5: {
-                    getArrayOfBusyFields()[i] = new int[] {22, 24, 26, 26, 26, 26, 24, 22};
+                    arrayOfBusyFields[i] = new int[] {22, 24, 26, 26, 26, 26, 24, 22};
                     break;
                 }
                 case 3: case 4: {
-                    getArrayOfBusyFields()[i] = new int[] {22, 24, 26, 28, 28, 26, 24, 22};
+                    arrayOfBusyFields[i] = new int[] {22, 24, 26, 28, 28, 26, 24, 22};
                     break;
                 }
 

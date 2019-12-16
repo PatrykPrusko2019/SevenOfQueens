@@ -50,24 +50,24 @@ public class Help {
     }
 
     private void diagonal() {
-        if(getRow() - 1 >= 0) {
+        if(row - 1 >= 0) {
             fillNegativeRows(); //supplements negative rows
         }
 
-        if(getRow() + 1 < getChessBoardTemp().length) {// supplements positive rows
+        if(row + 1 < chessBoardTemp.length) {// supplements positive rows
             fillPositiveRows();
         }
     }
 
     //get down diagonal
     private void fillPositiveRows() {
-        for(int i = getRow() + 1, counter = 1; i < getChessBoardTemp().length; i++, counter++ ) {
-            for(int j = getColumn(); j == getColumn(); j++) {
+        for(int i = row + 1, counter = 1; i < chessBoardTemp.length; i++, counter++ ) {
+            for(int j = column; j == column; j++) {
                 if( checkTheValueIsEmpty(i, j + counter) ) {
-                    getChessBoardTemp()[i][j+counter] = 1;
+                    chessBoardTemp[i][j+counter] = 1;
                 }
                 if( checkTheValueIsEmpty(i, j - counter) ) {
-                    getChessBoardTemp()[i][j-counter] = 1;
+                    chessBoardTemp[i][j-counter] = 1;
                 }
             }
         }
@@ -75,15 +75,15 @@ public class Help {
 
     //get up diagonal
     private void fillNegativeRows() {
-        for(int i = getRow() - 1, counter = 1; i >= 0; i--, counter++) {
-            for(int j = getColumn(); j == getColumn(); j++) {
+        for(int i = row - 1, counter = 1; i >= 0; i--, counter++) {
+            for(int j = column; j == column; j++) {
 
                 if( checkTheValueIsEmpty(i, j + counter) ) {
-                    getChessBoardTemp()[i][j+counter] = 1;
+                    chessBoardTemp[i][j+counter] = 1;
                 }
 
                 if (checkTheValueIsEmpty(i, j - counter)) {
-                    getChessBoardTemp()[i][j-counter] = 1;
+                    chessBoardTemp[i][j-counter] = 1;
                 }
 
             }
@@ -91,11 +91,11 @@ public class Help {
     }
 
     private void vertical() {
-        for(int i = 0; i < getChessBoardTemp().length; i++) { //rows
-            for(int j = getColumn(); j == getColumn(); j++) {
+        for(int i = 0; i < chessBoardTemp.length; i++) { //rows
+            for(int j = column; j == column; j++) {
 
                 if(checkTheValueIsEmpty(i, j)) {
-                    getChessBoardTemp()[i][j] = 1; //occupied field
+                    chessBoardTemp[i][j] = 1; //occupied field
 
                 }
             }
@@ -103,11 +103,11 @@ public class Help {
     }
 
     private void horizontally() { //poziomo
-        for(int i = getRow(); i == getRow(); i++) {
-            for(int j = 0; j < getChessBoardTemp()[i].length; j++) {
+        for(int i = row; i == row; i++) {
+            for(int j = 0; j < chessBoardTemp[i].length; j++) {
 
                 if(checkTheValueIsEmpty(i, j) ) { //jak 0 to zamien na zajete pole
-                    getChessBoardTemp()[i][j] = 1;
+                    chessBoardTemp[i][j] = 1;
                 }
 
             }
@@ -115,8 +115,8 @@ public class Help {
     }
 
     private boolean checkTheValueIsEmpty(int i, int j) {
-        if( (i >= 0 && j >= 0) && (i < getChessBoardTemp().length && j < getChessBoardTemp().length) ) {
-            if (getChessBoardTemp()[i][j] == 0) {
+        if( (i >= 0 && j >= 0) && (i < chessBoardTemp.length && j < chessBoardTemp.length) ) {
+            if (chessBoardTemp[i][j] == 0) {
                 return true;
             }
         }
